@@ -11,14 +11,20 @@ public static void main(String[]args){
 	examMarks=input.nextDouble();
 
 	if(examMarks<0 || examMarks >100)
-	{System.out.print("Invalid input for Exam Marks");}
+	{
+		System.out.print("Invalid input for Exam Marks");
+		return;
+	}
 	
 	
 	System.out.print("Please enter the lab marks (out of 100): ");
 	labMarks=input.nextDouble();
 
 	if(labMarks<0 || labMarks >100)
-	{System.out.print("Invalid input for Lab Marks");}
+	{
+		System.out.print("Invalid input for Lab Marks");
+		return;
+	}
 	
 
 	System.out.print("Please enter the percentage given for the Exam: ");
@@ -28,7 +34,10 @@ public static void main(String[]args){
 	labPercentage=input.nextDouble();
 		
 	if(labPercentage + examPercentage !=100)
-	{System.out.print("The percentages must add up to 100");}
+	{
+		System.out.print("The percentages must add up to 100");
+		return;
+	}
 	
 
 
